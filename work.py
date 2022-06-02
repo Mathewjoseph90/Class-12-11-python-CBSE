@@ -10,5 +10,6 @@ while i < (len(str_1)):
         uppercase = uppercase + 1
     if obj.islower() == True:
         lowercase = lowercase + 1
+    i += i
 print("The number of uppercase letter = ",uppercase)
 print("The number of lowercase letters = ",lowercase)
