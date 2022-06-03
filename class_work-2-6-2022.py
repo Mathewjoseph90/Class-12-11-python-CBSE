@@ -5,17 +5,18 @@ def min_max(L):
 def sum_all(L):
     return print(sum(L))
 
-def reverse_list(L :list):
+def reverse_list(L):
     L.reverse()
     return print(L)
 
 def swap(L):
-    new_element = int(input("Enter the new element :"))
-    old_element = int(input("Enter the old element :"))
-    index_list = L.index(old_element)
-    L[index_list] = new_element
-    return print("The list after swaping the elements",L)
 
+    for i in range(len(L)-1):
+       temp = L[i+1]
+       L[i+1] = L[i]
+       L[i] = temp
+
+    return print("The list after swap",L)
 limit = int(input("Enter the number of elements in the list :"))
 list  = []
 i = 0
