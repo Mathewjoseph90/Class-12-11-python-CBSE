@@ -1,15 +1,15 @@
-def min_max(L :list):
+def min_max(L):
     print("The max element of the list", max(L))
     print("the min element of the list", min(L))
 
-def sum_all(L :list):
+def sum_all(L):
     return print(sum(L))
 
 def reverse_list(L :list):
     L.reverse()
     return print(L)
 
-def swap(L :list):
+def swap(L):
     new_element = int(input("Enter the new element :"))
     old_element = int(input("Enter the old element :"))
     index_list = L.index(old_element)
